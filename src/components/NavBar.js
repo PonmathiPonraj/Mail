@@ -37,16 +37,16 @@ const NavBar= (props)=>{
                 Login
               </Link>}
               {isAuthenticated && <Button class="nav-link" onClick={logoutHandler}>
-                Logut
+                Logout
               </Button>}
             </li>
           </ul>
         </div>
-        {isAuthenticated &&
+        {/* {isAuthenticated &&
           <Link to='/MainPage'>
            Userprofile
           </Link>
-        }
+        } */}
       </nav>
     )
 }

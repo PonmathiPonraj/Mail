@@ -19,7 +19,7 @@ const InboxList = (props) => {
     console.log(props.id)
     dispatch(emailActions.deleteInbox(props.id))
     fetch(
-      `https://client-email-61813-default-rtdb.firebaseio.com/${email}/received/${props.id}.json`,
+      `https://mail-box-ca50f-default-rtdb.firebaseio.com/${email}/received/${props.id}.json`,
       { method: "DELETE" }
     ).then((res)=>{
         return res.json();
